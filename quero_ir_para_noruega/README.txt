@@ -1,0 +1,1 @@
+screenshot tem que ter largura de 600 px por 460 px de altura, e salva em png com o nome de screenshot.png.
