@@ -12,37 +12,37 @@
 	<body>
 		<div id="header">
 
-			<div id="top-header">
+			<div id="header-superior">
 
-				<div id="top-header-content">
+				<div id="header-superior-content">
 
 					<div id="header-paginas">
 						 p&aacute;ginas do cabeçalho
-					</div><!--/ endheader-paginas -->
+					</div><!--/ fim header-paginas -->
 
 					<div id="header-social">
 						 Parte de redes sociais no cabe&ccedil;alho
-					</div><!--/ end header-social -->
+					</div><!--/ fim header-social -->
 
-				</div><!--/ end top-header-content -->
+				</div><!--/ fim header-superior-content -->
 				
-			</div><!--/ end top-header -->
+			</div><!--/ fim header-superiorr -->
 
 			<div id="header-content">
 				
 				<div id="logo">
 					Logo
-				</div><!--/ end logo -->
+				</div><!--/ fim logo -->
 
 				<div id="login">
 					Login
-				</div><!--/ end login -->
+				</div><!--/ fim login -->
 
 				<div id="search">
 					Barra de busca
-				</div><!--/ end search -->
+				</div><!--/ fim search -->
 
-			</div><!--/ end header-content -->
+			</div><!--/ fim header-content -->
 
 			<div id="nav">
 
