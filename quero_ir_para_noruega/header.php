@@ -17,11 +17,24 @@
 				<div id="header-superior-content">
 
 					<div id="header-paginas">
-						 p&aacute;ginas do cabeçalho
+					
+						 <ul>
+						 	<li><a href="#">Home</a></li>
+						 	<li><a href="#">Arquivos</a></li>
+						 	<li><a href="#">Sobre N&oacute;s</a></li>
+						 	<li><a href="#">Servi&ccedil;os</a></li>
+						 	<li><a href="#">Contato</a></li>
+						 </ul>
+
 					</div><!--/ fim header-paginas -->
 
 					<div id="header-social">
-						 Parte de redes sociais no cabe&ccedil;alho
+					
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-face.jpg" rel="" title=""/></a>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-google.jpg" rel="" title=""/></a>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-twitter.jpg" rel="" title=""/></a>
+						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-youtube.jpg" rel="" title=""/></a>
+
 					</div><!--/ fim header-social -->
 
 				</div><!--/ fim header-superior-content -->
@@ -34,13 +47,13 @@
 					Logo
 				</div><!--/ fim logo -->
 
-				<div id="login">
-					Login
-				</div><!--/ fim login -->
-
 				<div id="search">
 					Barra de busca
 				</div><!--/ fim search -->
+
+				<div id="login">
+					Login
+				</div><!--/ fim login -->
 
 			</div><!--/ fim header-content -->
 
