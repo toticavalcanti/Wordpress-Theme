@@ -44,15 +44,26 @@
 			<div id="header-content">
 				
 				<div id="logo">
-					Logo
+					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" rel="" title="" /></a>
 				</div><!--/ fim logo -->
 
 				<div id="search">
-					Barra de busca
+					
+					<form action="" method="post">
+						<input type="text" name="">
+						<input type="submit" value="" class="btn-search" name="">
+					</form>
+
 				</div><!--/ fim search -->
 
+
 				<div id="login">
-					Login
+						
+					<ul>
+						<li class="logar"><a href="">Login</a></li>
+						<li class="registre"><a href="">Registre-se</a></li>
+					</ul>
+
 				</div><!--/ fim login -->
 
 			</div><!--/ fim header-content -->
