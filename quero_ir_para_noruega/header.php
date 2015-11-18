@@ -71,7 +71,25 @@
 			<div id="nav">
 
 				<div id="nav-content">
-					Barra de navega&ccedil;&atilde;o
+					
+					<ul>
+						<li><a href="#">VIAGENS</a>
+
+							<ul>
+								<li><a href="#">Oslo</a></li>
+								<li><a href="#">Rogaland</a></li>
+								<li><a href="#">Hordaland</a></li>
+								<li><a href="#">Sogn og Fjordane</a></li>
+								<li><a href="#">M&oslash;re og romsdal</a></li>
+							</ul>
+
+						</li>
+						<li><a href="#">IDIOMA</a></li>
+						<li><a href="#">CULTURA</a></li>
+						<li><a href="#">V&Iacute;DEOS</a></li>
+						<li><a href="#">ANUNCIE</a></li>
+					</ul>
+
 				</div><!--/ end nav-content -->
 
 			</div><!--/ end nav -->
