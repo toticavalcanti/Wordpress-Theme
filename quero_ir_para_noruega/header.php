@@ -68,30 +68,30 @@
 
 			</div><!--/ fim header-content -->
 
-			<div id="nav">
+			<ul class="menu"> <!-- Esse é o 1 nivel ou o nivel principal -->
+			    <li><a href="#">MENU 1</a></li>
+			    <li><a href="#">MENU 2</a>
+			        <ul class="submenu-1"> <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+			            <li><a href="#">Submenu 1</a></li>
+			            <li><a href="#">Submenu 2</a></li>
+			            <li><a href="#">Submenu 3</a>
+			                     <ul class="submenu-2"> <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
+			                            <li><a href="#">Submenu 4</a></li>
+			                          <li><a href="#">Submenu 5</a></li>
+			                        <li><a href="#">Submenu 6</a>
+			                                    <ul class="submenu-3"> <!-- Esse é o 4 nivel ou o Terceiro Drop Down -->
+			                                                <li><a href="#">Submenu 7</a></li>
+			                                              <li><a href="#">Submenu 8</a></li>
+			                                            <li><a href="#">Submenu 9</a></li>
+			                                    </ul>
+			                        </li>
+			                    </ul>
+			             </li>
+			        </ul>
+			    </li>
+			    <li><a href="#">MENU 3</a></li>
+			    <li><a href="#">MENU 4</a></li>
+			    <li><a href="#">MENU 5</a></li>
+			</ul>
 
-				<div id="nav-content">
-					
-					<ul>
-						<li><a href="#">VIAGENS</a>
-
-							<ul>
-								<li><a href="#">Oslo</a></li>
-								<li><a href="#">Rogaland</a></li>
-								<li><a href="#">Hordaland</a></li>
-								<li><a href="#">Sogn og Fjordane</a></li>
-								<li><a href="#">M&oslash;re og romsdal</a></li>
-							</ul>
-
-						</li>
-						<li><a href="#">IDIOMA</a></li>
-						<li><a href="#">CULTURA</a></li>
-						<li><a href="#">V&Iacute;DEOS</a></li>
-						<li><a href="#">ANUNCIE</a></li>
-					</ul>
-
-				</div><!--/ end nav-content -->
-
-			</div><!--/ end nav -->
-
-		</div><!--/ end header -->
+		</div><!--/ fim header -->
