@@ -10,32 +10,42 @@
 	</head>
 
 	<body>
-		<div id="header">
+
+		<!--/*<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>-->
+		
+		<header>
 
 			<div id="header-superior">
 
 				<div id="header-superior-content">
 
-					<div id="header-paginas">
+					<nav id="header-paginas">
 					
-						 <ul>
-						 	<li><a href="#">Home</a></li>
-						 	<li><a href="#">Arquivos</a></li>
-						 	<li><a href="#">Sobre N&oacute;s</a></li>
-						 	<li><a href="#">Servi&ccedil;os</a></li>
-						 	<li><a href="#">Contato</a></li>
+						 <ul> <!--quando o usuário clica no link "home" é direcionado para página home-->
+						 	<li><a href="<?php bloginfo('home'); ?>">Home</a></li>
+						 	<!--Pega a lista de páginas criadas no painel do wordpress e lista-->
+						 	<?php wp_list_pages('title_li='); ?>
+						 	
 						 </ul>
 
-					</div><!--/ fim header-paginas -->
+					</nav><!--/ fim header-paginas -->
 
-					<div id="header-social">
+					<nav id="header-social">
 					
 						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-face.jpg" rel="" title=""/></a>
 						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-google.jpg" rel="" title=""/></a>
 						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-twitter.jpg" rel="" title=""/></a>
 						<a href=""><img src="<?php bloginfo('template_url'); ?>/images/icon-youtube.jpg" rel="" title=""/></a>
 
-					</div><!--/ fim header-social -->
+					</nav><!--/ fim header-social -->
 
 				</div><!--/ fim header-superior-content -->
 				
@@ -44,54 +54,55 @@
 			<div id="header-content">
 				
 				<div id="logo">
-					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" rel="" title="" /></a>
+					<a href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" rel="" title="" /></a>
 				</div><!--/ fim logo -->
 
-				<div id="search">
+				<section id="search">
 					
 					<form action="" method="post">
-						<input type="text" name="">
+						<input type="text" name="" placehold="Digite sua pesquisa">
 						<input type="submit" value="" class="btn-search" name="">
 					</form>
 
-				</div><!--/ fim search -->
+				</section><!--/ fim search -->
 
 
-				<div id="login">
+				<section id="login">
 						
-					<ul>
-						<li class="logar"><a href="">Login</a></li>
-						<li class="registre"><a href="">Registre-se</a></li>
+					<ul><!--Quando o usuário clica no login, é redirecionado para wp-admin-->
+						<li class="logar"><a href="http://localhost/wordpress/wp-admin">Login</a></li>
+						<!--Ao clicar em registre a actio-->
+						<li class="registre"><a href="http://localhost/wordpress/wp-login.php?action=register">Registre-se</a></li>
 					</ul>
 
-				</div><!--/ fim login -->
+				</section><!--/ fim login -->
 
 			</div><!--/ fim header-content -->
 
-			<ul class="menu"> <!-- Esse é o 1 nivel ou o nivel principal -->
+			<nav class="menu"> <!-- Esse é o 1 nivel ou o nivel principal -->
 			    <li><a href="#">MENU 1</a></li>
 			    <li><a href="#">MENU 2</a>
-			        <ul class="submenu-1"> <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+			        <nav class="submenu-1"> <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
 			            <li><a href="#">Submenu 1</a></li>
 			            <li><a href="#">Submenu 2</a></li>
 			            <li><a href="#">Submenu 3</a>
-			                     <ul class="submenu-2"> <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
+			                     <nav class="submenu-2"> <!-- Esse é o 3 nivel ou o Segundo Drop Down -->
 			                            <li><a href="#">Submenu 4</a></li>
-			                          <li><a href="#">Submenu 5</a></li>
-			                        <li><a href="#">Submenu 6</a>
-			                                    <ul class="submenu-3"> <!-- Esse é o 4 nivel ou o Terceiro Drop Down -->
-			                                                <li><a href="#">Submenu 7</a></li>
-			                                              <li><a href="#">Submenu 8</a></li>
-			                                            <li><a href="#">Submenu 9</a></li>
-			                                    </ul>
-			                        </li>
-			                    </ul>
+			                          	<li><a href="#">Submenu 5</a></li>
+			                        	<li><a href="#">Submenu 6</a>
+			                                    <nav class="submenu-3"> <!-- Esse é o 4 nivel ou o Terceiro Drop Down -->
+			                                        <li><a href="#">Submenu 7</a></li>
+			                                        <li><a href="#">Submenu 8</a></li>
+			                                        <li><a href="#">Submenu 9</a></li>
+			                                    </nav>
+			                        	</li>
+			                    </nav>
 			             </li>
-			        </ul>
+			        </nav>
 			    </li>
 			    <li><a href="#">MENU 3</a></li>
 			    <li><a href="#">MENU 4</a></li>
 			    <li><a href="#">MENU 5</a></li>
-			</ul>
+			</nav>
 
-		</div><!--/ fim header -->
+		</header><!--/ fim header -->
