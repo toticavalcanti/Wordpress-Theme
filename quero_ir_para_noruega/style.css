@@ -38,60 +38,93 @@ header { width: 100%; background: #fff; }
 	width: 38px; height: 44px; cursor: pointer; 
 }
 
-/*=== Menu de navegação ===*/
+/*=== Menu de Navegação ===*/
+nav.menu{
+	width: 100%; 
+	margin: 0 auto;
+	float: left;
+	background: #222; 
+	border-top: 3px solid #ed5353; 
+}
 
-/*Configurações Padrões*/
-nav.menu {
-			width: 80%; height: 45px; background: #222; border-top: 3px solid #ed5353; 
-			margin: 0 auto; list-style: none; 
-		}
+.nav-menu {
+	list-style: none; 
+	margin-left: 150px;
+}
 
-.menu li, .menu a { margin: 0 auto; list-style:none; text-decoration:none; border-right: 1px solid #333; }
+.nav-menu li {
+	float: left; position: relative; 
+	font: 14px arial, verdana, tahoma; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	border-right: 1px solid #333;
+}
 
-nav.menu nav{ position:absolute; display:none; }
+.nav-menu li ul li {
+	text-transform: lowercase;
+}
 
-/* Configurações nivel 1*/
+.nav-menu li a {
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	line-height: 1;
+	padding: 20px;
+	text-decoration: none;
+}
 
-nav.menu{ float:left; font-family:Verdana, Geneva, sans-serif; font-size:15px; padding:0 155px; }
-.menu li{ float:left; width:auto; position:relative; }
-.menu li a{ display:block; padding:0 20px; line-height: 45px; height:45px; float:left; 
-			transition:all 0.2s linear; 
-		  }
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+	background-color: #ed5353;
+	color: #fff;
+}
 
-/* Configurações nivel 2*/
-.menu li:hover > nav.submenu-1{ display:block; top:45px; padding: 0 0px; width: 200px; }
-.menu nav.submenu-1 a{  width:160px; padding:0 20px; }
+.nav-menu .sub-menu,
+.nav-menu .children {
+	background-color: #222;
+	border: 2px solid #ed5353;
+	border-top: 0;
+	display: none;
+	padding: 0;
+	position: absolute;
+	float: left;
+}
 
-/* Configurações nivel 2*/
-.menu li:hover > nav.submenu-2{ display:block; top:0; left: 195px; padding: 0 0px; width: 200px; }
-.menu nav.submenu-2 a{  width:160px; padding:0 20px; }
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
+	border-left: 0;
+	left: 100%;
+	top: 0;
+}
 
-/* Configurações nivel 3*/
-.menu li:hover > nav.submenu-3{ display:block; top:0; left: 195px; padding: 0 0px; width: 200px; }
-.menu nav.submenu-3 a{  width:160px; padding:0 20px; }
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+	color: #fff;
+	margin: 0;
+	width: 200px;
+}
 
-/*Configurações de cores do menu de navegação*/
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover {
+	background-color: #ed5353;
+}
 
-/*nivel 1*/
-nav.menu{ background:#222; }
-.menu a{ color:#fff; }
-.menu li:hover > a{ background:#eee;  color:#ed5353; border-left: 3px solid #ed5353; padding: 0 18.5px; }
+ul.nav-menu li:hover > ul,
+.nav-menu ul li:hover > ul {
+	display: block;
+}
 
-/*nivel 2*/
-.submenu-1{ background:#f8f8f8; }
-.submenu-1 a{ color:#666; }
-.submenu-1 li:hover > a{ background:#eee; }
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	color: #bc360a;
+	font-style: italic;
+}
 
-/*nivel 3*/
-.submenu-2{ background:#f8f8f8; }
-.submenu-2 a{ color:#666; }
-.submenu-2 li:hover > a{ background:#eeeeee; }
-
-/*nivel 3*/
-.submenu-3{ background:#f8f8f8;}
-.submenu-3 a{ color:#666; }
-.submenu-3 li:hover > a{ background:#eee; }
-
+.menu-toggle {
+	display: none;
+}
 /*=== Fim do css do menu de navegação ===*/
 
 /*=== Container ===*/

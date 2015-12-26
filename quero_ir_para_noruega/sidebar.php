@@ -1,6 +1,6 @@
 		<aside id="sidebar">
 		
-			<nav> id="sidebar-vistos">
+			<nav id="sidebar-vistos">
 				<div id="title-vistos"><span>POSTS MAIS VISTOS</span></div>
 				
 				<ul>
@@ -28,7 +28,7 @@
 			<section id="sidebar-colunistas">
 				<div id="title-colunista"><span>COLUNISTAS</span></div>
 				
-				<nav>class="colunistas">
+				<nav class="colunistas">
 				
 					<ul>
 						<li>
