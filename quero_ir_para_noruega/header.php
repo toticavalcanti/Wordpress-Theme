@@ -79,9 +79,7 @@
 			</div><!--/ fim header-content -->
 
 			<nav class="menu"> <!-- Esse é o 1 nivel ou o nivel principal -->
-				<div id="categorias">
 					<?php wp_nav_menu( array( 'theme_location' => 'ID_DO_MENU', 'menu_class' => 'nav-menu' ) ); ?>		
-				</div>
 			</nav>
 
 		</header><!--/ fim header -->
