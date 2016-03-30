@@ -2,7 +2,7 @@
  Theme Name:   Twenty Fourteen Child
  Theme URI:    http://example.com/twenty-fourteen-child/
  Description:  Twenty Fourteen Child Theme
- Author:       the WordPress team customized by Toti Cavalcanti
+ Author:       the WordPress team customized by Toti Cavalcanti & Christmas graphic by Flaticon
  Author URI:   http://example.com
  Template:     twentyfourteen
  Version:      1.0.0
@@ -140,6 +140,7 @@ input[type="submit"]:focus {
 
 .site-header {
 	max-width: 100%;
+	height: 48px;
 }
 
 .site-title img {
@@ -157,11 +158,12 @@ input[type="submit"]:focus {
 .search-toggle {
 	background-color: #BF0000;
 	cursor: pointer;
-	float: right;
-	height: 48px;
+	right: 0;
 	margin-right: 38px;
+	height: 48px;
+	
 	text-align: center;
-	width: 48px;
+	width: 50px;
 }
 
 .search-toggle:hover,
@@ -169,7 +171,8 @@ input[type="submit"]:focus {
 	background-color: #D12A2A;
 }
 
-.search-box {
+.search-box {	
+	right: 0;
 	background-color: #D12A2A;
 	padding: 12px;
 }
@@ -178,8 +181,8 @@ input[type="submit"]:focus {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
-	position: absolute;
-	top: 48px;
+	position: relative;
+	top: 0px;
 	right: 0;
 	width: 40%;
 	z-index: 2;
